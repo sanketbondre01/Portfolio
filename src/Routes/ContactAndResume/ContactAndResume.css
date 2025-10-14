@@ -1,0 +1,148 @@
+
+
+/* ----------- Animation-Box ------------ */
+
+@keyframes fadeInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(40px); 
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.contact-main{
+  animation: fadeInFromBottom 1s ease forwards;
+  
+}
+
+/* ------------------------------------------- */
+
+
+
+.contact-main {
+  width: 100%;
+}
+
+.basic-contact {
+  margin-top: 30px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.contact-heading-div {
+  display: flex;
+}
+
+
+.contact-heading-div > * {
+  flex: 1;
+}
+
+.contact-heading-img-div {
+  margin-left: 13%;
+  margin-bottom: 8%;
+  margin-top: 4%;
+}
+
+.profile-pic {
+  box-shadow: 0 5px 15px #353535;
+  border-radius: 10px;
+}
+
+.contact-heading-text-div {
+  text-align: center;
+  margin-right: 125px;
+}
+
+.contact-heading-img-div > * {
+  max-width: 100%;
+  height: 350px;
+  width: 300px;
+}
+
+.contact-heading-text {
+  font-size: 56px;
+  font-weight: 400;
+  font-family: "Google Sans Medium";
+  line-height: 1.1;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.contact-header-detail-text {
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: "Google Sans Medium";
+}
+
+.general-btn {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+  background-color:rgb(156, 50, 73);
+  padding: 15px 15px;
+  margin-top: 25px;
+  border-radius: 4px;
+  border-width: 0px;
+  width: 200px;
+  height: 50px;
+  font-weight: bold;
+  font-family: "Google Sans Regular";
+  font-size: 17px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.general-btn:hover{
+  background-color: rgb(175, 82, 102);;
+}
+
+@media (max-width: 1380px) {
+  .contact-heading-text {
+    font-size: 50px;
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 1124px) and (min-width: 768px) {
+  .contact-heading-text-div{
+    margin-right: 0px;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-heading-text {
+    font-size: 30px;
+    margin-top: 0px;
+  }
+  .contact-heading-text-div{
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+
+  .contact-heading-img-div {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact-heading-div {
+    flex-direction: column;
+  }
+
+  .contact-header-detail-text {
+    font-size: 16px;
+    margin-left: 0px;
+    margin-right: 0px;
+    line-height: normal;
+    text-align: center;
+  }
+  .general-btn{
+    margin-bottom: 20px;
+  }
+}
